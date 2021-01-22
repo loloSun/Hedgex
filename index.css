@@ -1,0 +1,105 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size:10px;
+    /*width: 120rem;*/
+    margin: auto;
+    font-family: IBM Plex Sans;
+    background: #EEEFF2;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.head{
+    width: 90%;
+    /*height: 80rem;*/
+    margin: 1.6rem auto;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 5rem;
+    letter-spacing: 0px;
+    text-align: right;
+    box-sizing: border-box;
+
+}
+.head_right{
+    position: relative;
+    cursor: pointer;
+}
+.switch_language{
+    position: absolute;
+    width: 12rem;
+    height: 8.4rem;
+    right: -1rem;
+    top: 5rem;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(30, 30, 70, 0.13);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.8rem;
+    box-sizing: border-box;
+    display: none;
+}
+.switch_language>div{
+    width: 10.4rem;
+    height: 3.2rem;
+    border-radius: 0.8rem;
+    line-height: 3.2rem;
+    text-align: center;
+}
+.english{
+    background: #F9FAFC;
+}
+.cont_1{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+.svg_H5{
+    display: none;
+}
+.svg_Pc{
+    display: block;
+}
+.cont_1 .unactive{
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+    .head{
+        /*width: 90%;*/
+    }
+    .cont_1 svg{
+        width: 100%;
+        height: auto;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .head{
+        width: 100%;
+        padding: 0 1.6rem;
+        margin: 0 auto;
+        font-size: 1.3rem;
+        line-height: 5.6rem;
+    }
+    .head .logo_icon{
+        width: 12rem;
+        /*height: 3.2rem;*/
+    }
+    .svg_Pc{
+        display: none;
+    }
+    .svg_H5{
+        display: block;
+    }
+}
