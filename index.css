@@ -10,6 +10,7 @@ html{
     font-family: IBM Plex Sans;
     background: #F9FAFC;
 }
+/**/
 .left{
     float: left;
 }
@@ -31,6 +32,7 @@ html{
 .head_right{
     position: relative;
     cursor: pointer;
+    -webkit-tap-highlight-color:transparent;
 }
 .switch_language{
     position: absolute;
