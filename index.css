@@ -47,6 +47,7 @@ html{
     padding: 0.8rem;
     box-sizing: border-box;
     display: none;
+    z-index: 100;
 }
 .switch_language>div{
     width: 10.4rem;
@@ -58,21 +59,36 @@ html{
 .english{
     background: #F9FAFC;
 }
-.cont_1{
+.cont_1,.cont_2{
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
     text-align: center;
     position: relative;
 }
+.cont_1 .unactive_1,
+.cont_1 .active_2{
+    display: none;
+}
+.cont_1 .rect_click{
+    cursor: pointer;
+}
 .svg_H5{
     display: none;
+    margin: auto;
 }
 .svg_Pc{
     display: block;
+    margin: auto;
 }
-.cont_1 .unactive{
+.cont_1 .unactive_1,.cont_1 .active_2{
     display: none;
+}
+.cont_2 svg{
+    width: 100%;
+    height: auto;
+    /*height: 80rem;*/
+    margin:  auto;
 }
 @media screen and (max-width: 1200px) {
     .head{
