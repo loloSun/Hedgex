@@ -22,6 +22,15 @@ body{
 .right{
     float: right;
 }
+.bg_IMG{
+    width: 120rem;
+    height: 120rem;
+    position: absolute;
+    top: -46rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
 .head{
     width: 90%;
     height: 8rem;
@@ -86,7 +95,8 @@ body{
     max-width: 120rem;
     /*margin: auto;*/
     position: relative;
-    height: 45.6rem;
+    /*height: 45.6rem;*/
+    margin-top: 6rem;
     /*text-align: center;*/
 }
 .title_h1{
@@ -133,9 +143,10 @@ body{
 .cont_1 .buttons{
     height: 4rem;
     width: 36rem;
-    margin: 3.2rem auto 0;
+    margin: 3.2rem auto 8.3rem;
     /*display: flex;*/
     position: relative;
+    z-index: 2;
 }
 .active,.unactive{
     width: 16rem;
@@ -182,7 +193,7 @@ body{
 .icon_1{
     position: absolute;
     left: -8.1rem;
-    top: 1.3rem;
+    top: 0;
 }
 .icon_2{
     top:1.1rem;
@@ -235,7 +246,9 @@ body{
 }
 .cont_2_icon1{
     /*margin-top: 8rem;*/
+    height: 10rem;
     margin: 8rem auto 0;
+    width: 10rem;
 }
 .cont_2 h2{
     height: 6rem;
@@ -465,9 +478,15 @@ body{
     }
 
 }
-@media screen and (max-width: 480px) {
-    html{
+@media screen and (max-width: 680px) {
+    .bg_IMG{
+        width: 100%;
+        top: -12.6rem;
+        height: 37.5rem;
+    }
+    html,body{
         overflow-x: hidden;
+        width: 100%;
     }
     .svg_H5{
         display: block;
@@ -492,12 +511,6 @@ body{
         width: 12rem;
         /*height: 3.2rem;*/
     }
-    /*.svg_Pc{*/
-    /*    display: none;*/
-    /*}*/
-    /*.svg_H5{*/
-    /*    display: block;*/
-    /*}*/
     .cont_1{
         width: 100%;
     }
@@ -519,6 +532,7 @@ body{
     .cont_1_1{
         width: 100%;
         height: auto;
+        margin-top: 0;
         /*overflow-x: hidden;*/
         display: inline-block;
     }
@@ -589,7 +603,7 @@ body{
     }
     .cont_2_icon1{
         width: 5.534rem;
-        height: 6.397rem;
+        height: 5.5rem;
         margin: 3.2rem auto 0;
     }
     .cont_2_icon2{
