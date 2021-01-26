@@ -10,7 +10,7 @@ html{
     font-family: IBM Plex Sans;
     background: #F9FAFC;
     width: 100%;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 body{
     width: 100%;
@@ -466,6 +466,9 @@ body{
 
 }
 @media screen and (max-width: 480px) {
+    html{
+        overflow-x: hidden;
+    }
     .svg_H5{
         display: block;
         margin: auto;
@@ -657,10 +660,11 @@ body{
     }
     .cont_4_item{
         margin:3.2rem auto 0;
-        width: 24%;
+        width: 91%;
+        max-width: 35rem;
         border-radius: 24px;
-        width: 282px;
-        height: 172px;
+        /*width: 282px;*/
+        height: 17rem;
         padding-left: 2.4rem;
         box-sizing: border-box;
         box-shadow: 8px 8px 0px #F2F3F6;
